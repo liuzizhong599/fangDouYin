@@ -15,6 +15,7 @@
 		6E2434DE1FAC075C006E3AA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2434DD1FAC075C006E3AA8 /* main.m */; };
 		6E2434E81FAC075C006E3AA8 /* fangDouYinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2434E71FAC075C006E3AA8 /* fangDouYinTests.m */; };
 		6E2434F31FAC075C006E3AA8 /* fangDouYinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2434F21FAC075C006E3AA8 /* fangDouYinUITests.m */; };
+		D1348B87CED4F336B9DE88B3 /* libPods-fangDouYin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCF84C9F745CEBA5AF35C54 /* libPods-fangDouYin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		127719602AE3D94E57F13100 /* Pods-fangDouYin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fangDouYin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fangDouYin/Pods-fangDouYin.debug.xcconfig"; sourceTree = "<group>"; };
+		4BEF37560F29E6833ECF411B /* Pods-fangDouYin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fangDouYin.release.xcconfig"; path = "Pods/Target Support Files/Pods-fangDouYin/Pods-fangDouYin.release.xcconfig"; sourceTree = "<group>"; };
 		6E2434CB1FAC075C006E3AA8 /* fangDouYin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fangDouYin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2434CE1FAC075C006E3AA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E2434CF1FAC075C006E3AA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		6E2434EE1FAC075C006E3AA8 /* fangDouYinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fangDouYinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2434F21FAC075C006E3AA8 /* fangDouYinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fangDouYinUITests.m; sourceTree = "<group>"; };
 		6E2434F41FAC075C006E3AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCF84C9F745CEBA5AF35C54 /* libPods-fangDouYin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fangDouYin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1348B87CED4F336B9DE88B3 /* libPods-fangDouYin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				6E2434E61FAC075C006E3AA8 /* fangDouYinTests */,
 				6E2434F11FAC075C006E3AA8 /* fangDouYinUITests */,
 				6E2434CC1FAC075C006E3AA8 /* Products */,
+				B68DB52CC0824C9A91049DB1 /* Pods */,
+				9D4190E2DE5D405869104729 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = fangDouYinUITests;
 			sourceTree = "<group>";
 		};
+		9D4190E2DE5D405869104729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF84C9F745CEBA5AF35C54 /* libPods-fangDouYin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B68DB52CC0824C9A91049DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127719602AE3D94E57F13100 /* Pods-fangDouYin.debug.xcconfig */,
+				4BEF37560F29E6833ECF411B /* Pods-fangDouYin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E2434F71FAC075C006E3AA8 /* Build configuration list for PBXNativeTarget "fangDouYin" */;
 			buildPhases = (
+				EA4E16F14EC5BF9FED80DD60 /* [CP] Check Pods Manifest.lock */,
 				6E2434C71FAC075C006E3AA8 /* Sources */,
 				6E2434C81FAC075C006E3AA8 /* Frameworks */,
 				6E2434C91FAC075C006E3AA8 /* Resources */,
+				CD7ED1104C9818C726FD3639 /* [CP] Embed Pods Frameworks */,
+				4A1A19A9166352C251E623C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A1A19A9166352C251E623C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fangDouYin/Pods-fangDouYin-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fangDouYin/Pods-fangDouYin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD7ED1104C9818C726FD3639 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fangDouYin/Pods-fangDouYin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4E16F14EC5BF9FED80DD60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fangDouYin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E2434C71FAC075C006E3AA8 /* Sources */ = {
@@ -428,11 +510,13 @@
 		};
 		6E2434F81FAC075C006E3AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127719602AE3D94E57F13100 /* Pods-fangDouYin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHL52Z489T;
 				INFOPLIST_FILE = fangDouYin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = etyhetyhrtyhtryhth.fangDouYin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +526,13 @@
 		};
 		6E2434F91FAC075C006E3AA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEF37560F29E6833ECF411B /* Pods-fangDouYin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHL52Z489T;
 				INFOPLIST_FILE = fangDouYin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = etyhetyhrtyhtryhth.fangDouYin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
